@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tribute to Bharat Ratna Sir M. Visvesvaraya{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=39">
+    <link rel="stylesheet" href="{% static 'css/override.css' %}?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="mainNav">
+        <div class="container nav-container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/sirmv-logo.png' %}" alt="Sir M. Visvesvaraya logo" class="logo-img">
+                <span class="logo-text">Tribute to Bharat Ratna Sir M. Visvesvaraya</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#dashboard">Dashboard</a></li>
+
+                <li class="nav-dropdown">
+                    <button type="button" class="dropdown-toggle">About </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'about_us' %}">About Us</a></li>
+                        <li><a href="{% url 'about' %}">About Sir MV</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{% url 'ideathon' %}">Idea Bank</a></li>
+
+                <li class="nav-dropdown">
+                    <button type="button" class="dropdown-toggle">Explore</button>
+                    <ul class="dropdown-menu">
+                        {% if False %}
+                        <li><a href="{% url 'events' %}">Events</a></li>
+                        {% endif %}
+                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                        <li><a href="{% url 'guidelines' %}">Guidelines</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{% url 'collaboration' %}">Collaboration</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                <li>
+                    <a href="https://ingeniouspark.in/track-idea?source_platform=sirmv-idea" class="nav-cta" target="_blank" rel="noopener noreferrer">Track Idea</a>
+                </li>
+                <li>
+                    <a href="{% static 'media/guidelines/shortlisted-ideas.pdf' %}" download class="nav-cta" style="background: var(--gold);" data-download-toast="Shortlisted ideas PDF downloading..." title="Download shortlisted ideas from 2025-2026 challenge">Shortlisted Ideas</a>
+                </li>
+                <li>
+                    <div class="nav-cta" onclick="return false;" style="opacity: 0.5; cursor: not-allowed; pointer-events: none;">Submit Idea</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% if messages %}
+    <div class="messages-container">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tribute to Bharat Ratna Sir M. Visvesvaraya</h3>
+                    <p>Bharat Ratna Sir M. Visvesvaraya and inviting the next generation to build the future of India through the Visvesvaraya Idea Bank.</p>
+                </div>
+
+                <div class="footer-section footer-quick-links-section">
+                    <h4>Quick Links</h4>
+
+                    <div class="footer-links-two-col">
+                        <ul>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#dashboard">Dashboard</a></li>
+                            <li><a href="{% url 'about_us' %}">About Us</a></li>
+                            <li><a href="{% url 'about' %}">About Sir MV</a></li>
+                            <li><a href="{% url 'ideathon' %}">Idea Bank</a></li>
+                            <li><a href="https://ingeniouspark.in/track-idea?source_platform=sirmv-idea" target="_blank" rel="noopener noreferrer">Track Idea</a></li>
+                            <li><div onclick="return false;" style="opacity: 0.5; cursor: not-allowed; pointer-events: none;">Submit Idea</div></li>
+                        </ul>
+
+                        <ul>
+                            {% if False %}
+                            <li><a href="/events/">Events</a></li>
+                            {% endif %}
+                            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                            <li><a href="{% url 'guidelines' %}">Guidelines</a></li>
+                            <li><a href="{% url 'collaboration' %}">Collaboration</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:smvvisions@gmail.com">smvvisions@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+919071620909">+91 9731280666</a></p>
+                    <p>#1256, 2nd Cross Road,<br>Krishnamurthy Puram,<br>Mysuru 570004</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bharat Ratna Sir M. Visvesvaraya &amp; Idea Bank. All rights reserved. Developed by M PRO9 Pvt.Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}?v=18"></script>
+</body>
+
+</html>

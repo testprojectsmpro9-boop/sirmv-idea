@@ -1,0 +1,310 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<style>
+    .contact-page p,
+    .contact-page li {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+<div class="contact-page">
+<div class="page-hero">
+    <div class="blueprint-bg"></div>
+    <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">Have questions about the Ideathon? We're here to help. Reach out to our team.</p>
+    </div>
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="section-subtitle">Whether you are a student, educator, or organization, we would love to hear from you.</p>
+
+        <div class="contact-layout">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>For general inquiries and support:</p>
+                    <a href="mailto:smvvisions@gmail.com">smvvisions@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>Mon–Fri from 10:30AM to 6:00PM IST:</p>
+                    <a href="tel:+9731280666">+91 9731280666</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Our Location</h3>
+                    <p>#1256, 2nd Cross Road,<br>Krishnamurthy Puram,<br>Mysuru 570004</p>
+                </div>
+
+                <!-- <div class="contact-card">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">X (Twitter)</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Send a Message</h3>
+                <p>We'll try to get back to you within 24 hours.</p>
+
+                <form action="https://forms.gle/NGNk1fas28wmVcFr8" method="get" target="_blank" rel="noopener noreferrer" class="contact-form">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section sir-mv-faq-section" aria-labelledby="sir-mv-faq-title">
+    <div class="container">
+        <div class="sir-mv-faq-header">
+            <span class="sir-mv-faq-kicker">SIR MV Young Innovators Challenge</span>
+            <h2 id="sir-mv-faq-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="sir-mv-faq-list" data-sir-mv-faq>
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>1. What is the SIR MV Young Innovators Challenge?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>The SIR MV Young Innovators Challenge is a student innovation platform that encourages school students to think creatively, solve real-world problems, and present their original ideas or working models.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>2. Who can participate?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Students from Classes 1 to 10 can participate. An optional category is available for Classes 11 and 12 Science stream students. School dropout children aged 6 to 18 years may also participate in the appropriate category.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>3. Can students participate as a team?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Yes. Students may participate individually or in teams of two. For team participation, both students should belong to the same age group.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>4. Is there any registration fee?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>No. Participation is completely free.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>5. What kind of ideas can be submitted?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Students can submit original ideas, models, or innovative solutions related to agriculture, healthcare, assistive technology, women safety, transportation, water and sanitation, education, AI and digital solutions, rural innovation, waste management, environment, renewable energy, and food and nutrition.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>6. Does the idea need to be a working model?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>No. Students can submit a new idea, a drawing or concept, a prototype, a working model, or a completed model. A completed model is not compulsory.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>7. Can the same student submit more than one idea?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>No. Each student may submit only one idea. Students are encouraged to submit their best original innovation.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>8. How can students submit their ideas?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Students can submit their ideas through the official website using the online idea submission form.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>9. Should the idea be original?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Yes. It must be created by the student and not copied.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>10. Is parent or guardian permission required?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Yes. Parent or guardian permission is required.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>11. Will schools receive certificates?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Yes. Participation certificates and recognition details will be shared as per challenge guidelines.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>12. How will ideas be evaluated?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Ideas will be evaluated based on originality, creativity, practical usefulness, problem-solving approach, presentation, and clarity.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>13. Can schools submit multiple student entries?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Yes. Schools can encourage and submit multiple student ideas.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>14. What happens after submission?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>The evaluation team will review the idea. Selected students may be informed about the next stages.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>15. How can I track my submitted idea?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Use your unique Idea ID on the Track Idea page.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>16. Our school is submitting two ideas. Can we submit both at one time in a single form?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>No. Each idea must be submitted separately. A unique Idea ID will be generated for every submission.</p>
+                </div>
+            </article>
+
+            <article class="sir-mv-faq-item">
+                <button class="sir-mv-faq-question" type="button" aria-expanded="false">
+                    <span>17. If a school submits two ideas, will both receive separate Idea IDs?</span>
+                    <span class="sir-mv-faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <div class="sir-mv-faq-answer" aria-hidden="true">
+                    <p>Yes. Each idea will receive its own unique Idea ID and can be tracked individually.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<script>
+    (function () {
+        const faqSection = document.querySelector('[data-sir-mv-faq]');
+        if (!faqSection) return;
+
+        const faqItems = Array.from(faqSection.querySelectorAll('.sir-mv-faq-item'));
+
+        function closeItem(item) {
+            const question = item.querySelector('.sir-mv-faq-question');
+            const answer = item.querySelector('.sir-mv-faq-answer');
+
+            item.classList.remove('is-open');
+            question.setAttribute('aria-expanded', 'false');
+            answer.setAttribute('aria-hidden', 'true');
+        }
+
+        faqItems.forEach(function (item) {
+            const question = item.querySelector('.sir-mv-faq-question');
+            const answer = item.querySelector('.sir-mv-faq-answer');
+
+            question.addEventListener('click', function () {
+                const shouldOpen = question.getAttribute('aria-expanded') !== 'true';
+
+                faqItems.forEach(closeItem);
+
+                if (shouldOpen) {
+                    item.classList.add('is-open');
+                    question.setAttribute('aria-expanded', 'true');
+                    answer.setAttribute('aria-hidden', 'false');
+                }
+            });
+        });
+
+        function revealFaqItems() {
+            faqItems.forEach(function (item, index) {
+                window.setTimeout(function () {
+                    item.classList.add('is-visible');
+                }, index * 75);
+            });
+        }
+
+        if ('IntersectionObserver' in window) {
+            const faqObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        revealFaqItems();
+                        faqObserver.disconnect();
+                    }
+                });
+            }, { threshold: 0.18 });
+
+            faqObserver.observe(faqSection);
+        } else {
+            revealFaqItems();
+        }
+    }());
+</script>
+{% endblock %}

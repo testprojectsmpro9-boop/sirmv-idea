@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Guidelines — Bharat Ratna Sir MV Young Innovators Challenge{% endblock %}
+
+{% block content %}
+<style>
+    .guidelines-page .page-hero .page-subtitle {
+        text-align: center;
+        text-justify: auto;
+    }
+</style>
+<div class="guidelines-page">
+<div class="page-hero">
+    <div class="blueprint-bg"></div>
+    <div class="container">
+        <p class="page-label">Official Rules</p>
+        <h1 class="page-title">Guidelines</h1>
+        <p class="page-subtitle">Rules and guidance for students, schools, and group participants in the Visvesvaraya Idea Bank.</p>
+    </div>
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <div class="info-card">
+            <h3>Download guidelines (PDF)</h3>
+            <p style="margin-bottom: 1rem;">Students, teachers, and parents can download the official guidelines for offline reading and printing.</p>
+            <div class="hero-buttons" style="margin-top: 0;">
+                <a href="{% static 'media/guidelines/schoolguidelines.pdf' %}" class="btn btn-outline" download>Download School Guidelines PDF</a>
+                <a href="{% static 'media/guidelines/individual guide.pdf' %}" class="btn btn-outline" download>Download Individual Guidelines PDF</a>
+                <a href="{% static 'media/guidelines/groups guide.pdf' %}" class="btn btn-outline" download>Download Group Guidelines PDF</a>
+            </div>
+        </div>
+
+        <div class="info-card" id="guidelines-schools">
+            <h3>Guidelines for School Participants</h3>
+            <!-- <p style="margin-bottom: 0.75rem;"><strong>Guidelines for School Participants</strong></p> -->
+            <ol style="margin: 0; padding-left: 1.25rem; font-size: 0.92rem; color: var(--muted); line-height: 1.65;">
+                <li style="margin-bottom: 0.45rem;">Participation is open for schools from Classes 1 to 10.</li>
+                <li style="margin-bottom: 0.45rem;">An optional participation category is available for Classes 11 and 12 (Science stream) students.</li>
+                <li style="margin-bottom: 0.45rem;">School dropout children aged 6 to 18 years may also participate under the respective category.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas submitted by students must be original and should not be copied from others or the internet.</li>
+                <li style="margin-bottom: 0.45rem;">Schools are encouraged to conduct an internal innovation competition, screening, or idea presentation session within the school.</li>
+                <li style="margin-bottom: 0.45rem;">After the internal selection process, schools can shortlist and submit the Top 2 best ideas.</li>
+                <li style="margin-bottom: 0.45rem;">Each selected idea must be submitted separately (one by one) through the submission form or the prescribed submission method.</li>
+                <li style="margin-bottom: 0.45rem;">While submitting each idea, schools must provide:
+                    <ul style="margin: 0.35rem 0 0; padding-left: 1.25rem; list-style-type: disc;">
+                        <li>Student name</li>
+                        <li>Class/grade</li>
+                        <li>School name</li>
+                        <li>School address</li>
+                        <li>Coordinator/teacher name</li>
+                        <li>Coordinator contact details</li>
+                        <li>Idea title and description</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.45rem;">Students may submit ideas related to:
+                    <ul style="margin: 0.35rem 0 0; padding-left: 1.25rem; list-style-type: disc;">
+                        <li>Agriculture &amp; Farming</li>
+                        <li>Healthcare / Medical</li>
+                        <li>Assistive Technology</li>
+                        <li>Women Safety &amp; Empowerment</li>
+                        <li>Transportation &amp; Mobility</li>
+                        <li>Water &amp; Sanitation</li>
+                        <li>Education &amp; Learning</li>
+                        <li>AI / Technology / Digital</li>
+                        <li>Rural Innovation</li>
+                        <li>Waste Management</li>
+                        <li>Environment &amp; Climate</li>
+                        <li>Renewable Energy</li>
+                        <li>Food &amp; Nutrition</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.45rem;">Schools may include drawings, sketches, charts, diagrams, photographs, or optional prototype details to support the idea.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas may preferably be submitted in English, Kannada or any Indian language are also accepted.</li>
+                <li style="margin-bottom: 0.45rem;">After submitting your idea, a unique Idea ID will be generated and sent to your registered email address. You can use this Idea ID to track the status of your submission online at any time.</li>
+                <li style="margin-bottom: 0.45rem;">Ensure all details are entered correctly before final submission.</li>
+                <li style="margin-bottom: 0.45rem;">All shortlisted ideas must be submitted before the announced deadline.</li>
+                <li style="margin-bottom: 0.45rem;">The decision of the jury/evaluation committee will be final and binding.</li>
+                <li style="margin-bottom: 0.45rem;">Selected students and schools may receive Mentorship Support, Prototype Development Guidance, Certificates &amp; Awards, Exhibition Opportunities, Innovation Recognition.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas can be submitted through: Email Submission, WhatsApp Submission, Postal Submission, Online Submission Form available on the website.</li>
+                <li style="margin-bottom: 0.45rem;">Schools are encouraged to motivate maximum student participation and support grassroots innovation initiatives.</li>
+            </ol>
+        </div>
+
+        <div class="info-card" id="guidelines-individual">
+            <h3>Guidelines for Individual Participants</h3>
+            <!-- <p style="margin-bottom: 0.75rem;"><strong>Guidelines for Individual Participants</strong></p> -->
+            <ol style="margin: 0; padding-left: 1.25rem; font-size: 0.92rem; color: var(--muted); line-height: 1.65;">
+                <li style="margin-bottom: 0.45rem;">Participation is open for individual students from Classes 1 to 10.</li>
+                <li style="margin-bottom: 0.45rem;">An optional participation category is available for Classes 11 and 12 (Science stream) students.</li>
+                <li style="margin-bottom: 0.45rem;">School dropout children aged 6 to 18 years may also participate under the respective category.</li>
+                <li style="margin-bottom: 0.45rem;">Each individual participant can submit only one idea.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas submitted must be original and should not be copied from others or the internet.</li>
+                <li style="margin-bottom: 0.45rem;">Participants are encouraged to identify real-life problems from their home, school, village, city, or society and propose innovative solutions.</li>
+                <li style="margin-bottom: 0.45rem;">While submitting the idea, participants must provide:
+                    <ul style="margin: 0.35rem 0 0; padding-left: 1.25rem; list-style-type: disc;">
+                        <li>Student name</li>
+                        <li>Class/grade</li>
+                        <li>School name (if applicable)</li>
+                        <li>Full address</li>
+                        <li>Parent/guardian name</li>
+                        <li>Parent/guardian contact details</li>
+                        <li>Idea title and description</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.45rem;">Students may submit ideas related to:
+                    <ul style="margin: 0.35rem 0 0; padding-left: 1.25rem; list-style-type: disc;">
+                        <li>Agriculture &amp; Farming</li>
+                        <li>Healthcare / Medical</li>
+                        <li>Assistive Technology</li>
+                        <li>Women Safety &amp; Empowerment</li>
+                        <li>Transportation &amp; Mobility</li>
+                        <li>Water &amp; Sanitation</li>
+                        <li>Education &amp; Learning</li>
+                        <li>AI / Technology / Digital</li>
+                        <li>Rural Innovation</li>
+                        <li>Waste Management</li>
+                        <li>Environment &amp; Climate</li>
+                        <li>Renewable Energy</li>
+                        <li>Food &amp; Nutrition</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.45rem;">Schools may include drawings, sketches, charts, diagrams, photographs, or optional prototype details to support the idea.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas may preferably be submitted in English, Kannada or any Indian language are also accepted.</li>
+                <li style="margin-bottom: 0.45rem;">After submitting your idea, a unique Idea ID will be generated and sent to your registered email address. You can use this Idea ID to track the status of your submission online at any time.</li>
+                <li style="margin-bottom: 0.45rem;">Ensure all details are entered correctly before final submission.</li>
+                <li style="margin-bottom: 0.45rem;">All entries must be submitted before the announced deadline.</li>
+                <li style="margin-bottom: 0.45rem;">The decision of the jury/evaluation committee will be final and binding.</li>
+                <li style="margin-bottom: 0.45rem;">Selected groups may receive: Mentorship Support; Prototype Development Guidance; Certificates &amp; Awards; Exhibition Opportunities; Innovation Recognition.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas can be submitted through: Email Submission; WhatsApp Submission; Postal Submission; Online Submission Form available on the website.</li>
+                <li style="margin-bottom: 0.45rem;">Students and parents/guardians are encouraged to work together and support innovation through teamwork and creative problem-solving.</li>
+            </ol>
+        </div>
+
+        <div class="info-card" id="guidelines-groups">
+            <h3>Guidelines for Group Participants</h3>
+            <!-- <p style="margin-bottom: 0.75rem;"><strong>Guidelines for Group Participants</strong></p> -->
+            <ol style="margin: 0; padding-left: 1.25rem; font-size: 0.92rem; color: var(--muted); line-height: 1.65;">
+                <li style="margin-bottom: 0.45rem;">Participation is open for groups of 2 students from Classes 1 to 10.</li>
+                <li style="margin-bottom: 0.45rem;">An optional participation category is available for Classes 11 and 12 (Science stream) students.</li>
+                <li style="margin-bottom: 0.45rem;">School dropout children aged 6 to 18 years may also participate.</li>
+                <li style="margin-bottom: 0.45rem;">Each group must consist of 2 students of the same age group/class.</li>
+                <li style="margin-bottom: 0.45rem;">Each group can submit only one idea.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas submitted by the group must be original and should not be copied from others or the internet.</li>
+                <li style="margin-bottom: 0.45rem;">Group participants are encouraged to identify real-life problems from their home, school, village, city, or society and propose innovative solutions.</li>
+                <li style="margin-bottom: 0.45rem;">While submitting the idea, groups must provide:
+                    <ul style="margin: 0.35rem 0 0; padding-left: 1.25rem; list-style-type: disc;">
+                        <li>Students name</li>
+                        <li>Class/grade</li>
+                        <li>School name (if applicable)</li>
+                        <li>Full address</li>
+                        <li>Parent/guardian name and contact details</li>
+                        <li>Idea title and description</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.45rem;">Students may submit ideas related to:
+                    <ul style="margin: 0.35rem 0 0; padding-left: 1.25rem; list-style-type: disc;">
+                        <li>Agriculture &amp; Farming</li>
+                        <li>Healthcare / Medical</li>
+                        <li>Assistive Technology</li>
+                        <li>Women Safety &amp; Empowerment</li>
+                        <li>Transportation &amp; Mobility</li>
+                        <li>Water &amp; Sanitation</li>
+                        <li>Education &amp; Learning</li>
+                        <li>AI / Technology / Digital</li>
+                        <li>Rural Innovation</li>
+                        <li>Waste Management</li>
+                        <li>Environment &amp; Climate</li>
+                        <li>Renewable Energy</li>
+                        <li>Food &amp; Nutrition</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.45rem;">Groups may include drawings, sketches, charts, diagrams, photographs, or optional prototype details to support the idea.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas may preferably be submitted in English or Kannada or any Indian language are also accepted.</li>
+                <li style="margin-bottom: 0.45rem;">After submitting your idea, a unique Idea ID will be generated and sent to your registered email address. You can use this Idea ID to track the status of your submission online at any time.</li>
+                <li style="margin-bottom: 0.45rem;">Ensure all participant and parent/guardian details are entered correctly before final submission.</li>
+                <li style="margin-bottom: 0.45rem;">All entries must be submitted before the announced deadline.</li>
+                <li style="margin-bottom: 0.45rem;">The decision of the jury/evaluation committee will be final and binding.</li>
+                <li style="margin-bottom: 0.45rem;">Selected groups may receive: Mentorship Support; Prototype Development Guidance; Certificates &amp; Awards; Exhibition Opportunities; Innovation Recognition.</li>
+                <li style="margin-bottom: 0.45rem;">Ideas can be submitted through: Email Submission; WhatsApp Submission; Postal Submission; Online Submission Form available on the website.</li>
+                <li style="margin-bottom: 0.45rem;">Students and parents/guardians are encouraged to work together and support innovation through teamwork and creative problem-solving.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock %}

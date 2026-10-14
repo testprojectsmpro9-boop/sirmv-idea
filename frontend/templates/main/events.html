@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Events — Sir M. Visvesvaraya Tribute{% endblock %}
+
+{% block content %}
+<style>
+    .events-page p,
+    .events-page li {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+<div class="events-page">
+
+<!-- Hero -->
+<div class="page-hero">
+    <div class="blueprint-bg"></div>
+    <div class="container">
+        <p class="page-label">What's Happening</p>
+        <h1 class="page-title">Events</h1>
+        <p class="page-subtitle">Stay up to date with workshops, grand finales, mentorship sessions, and more — all centred around the Visvesvaraya Ideathon.</p>
+    </div>
+</div>
+
+<!-- Upcoming Events -->
+<section class="content-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Coming Up</span>
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="section-subtitle">Mark your calendar — these are the key milestones of the current Ideathon cycle.</p>
+        </div>
+
+        <div class="events-grid">
+            <div class="event-card event-card--upcoming">
+                <div class="event-date-badge">
+                    <span class="event-month">MAY</span>
+                    <span class="event-day">15</span>
+                </div>
+                <div class="event-body">
+                    <span class="event-tag event-tag--open">Open</span>
+                    <h3>Ideathon Submissions Open</h3>
+                    <p>The submission portal opens for both School and College categories. Start preparing your idea proposals now.</p>
+                    <div class="event-meta">
+                        <span>📍 Online</span>
+                        <span>🕘 All Day</span>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPS-7BOtIUCRgoWOYzWteWMq72Cd8Vi_mF7MBNATPeciVp3Q/formResponse" class="btn btn-primary" style="margin-top:1rem;" target="_blank" rel="noopener noreferrer">Register / Submit</a>
+                </div>
+            </div>
+
+            <div class="event-card event-card--upcoming">
+                <div class="event-date-badge">
+                    <span class="event-month">JUL</span>
+                    <span class="event-day">10</span>
+                </div>
+                <div class="event-body">
+                    <span class="event-tag event-tag--workshop">Workshop</span>
+                    <h3>Idea Refinement Workshop</h3>
+                    <p>A live online workshop where registered participants get guidance from industry mentors on sharpening their proposals.</p>
+                    <div class="event-meta">
+                        <span>📍 Online — Zoom</span>
+                        <span>🕘 3:00 PM IST</span>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPS-7BOtIUCRgoWOYzWteWMq72Cd8Vi_mF7MBNATPeciVp3Q/formResponse" class="btn btn-primary" style="margin-top:1rem;" target="_blank" rel="noopener noreferrer">Register Now</a>
+                </div>
+            </div>
+
+            <div class="event-card event-card--upcoming">
+                <div class="event-date-badge">
+                    <span class="event-month">AUG</span>
+                    <span class="event-day">1</span>
+                </div>
+                <div class="event-body">
+                    <span class="event-tag event-tag--deadline">Deadline</span>
+                    <h3>Submission Deadline</h3>
+                    <p>Last date to submit your idea proposal. All entries must be received by 11:59 PM IST on this date.</p>
+                    <div class="event-meta">
+                        <span>📍 Online Portal</span>
+                        <span>🕘 11:59 PM IST</span>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPS-7BOtIUCRgoWOYzWteWMq72Cd8Vi_mF7MBNATPeciVp3Q/formResponse" class="btn btn-primary" style="margin-top:1rem;" target="_blank" rel="noopener noreferrer">Submit Before Deadline</a>
+                </div>
+            </div>
+
+            <div class="event-card event-card--upcoming">
+                <div class="event-date-badge">
+                    <span class="event-month">SEP</span>
+                    <span class="event-day">10</span>
+                </div>
+                <div class="event-body">
+                    <span class="event-tag event-tag--announcement">Announcement</span>
+                    <h3>Finalists Announced</h3>
+                    <p>The top ideas from both categories will be announced publicly. Finalists will be contacted directly for the Grand Finale.</p>
+                    <div class="event-meta">
+                        <span>📍 Online</span>
+                        <span>🕘 12:00 PM IST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card event-card--upcoming event-card--featured">
+                <div class="event-date-badge event-date-badge--gold">
+                    <span class="event-month">SEP</span>
+                    <span class="event-day">15</span>
+                </div>
+                <div class="event-body">
+                    <span class="event-tag event-tag--finale">Grand Finale</span>
+                    <h3>Visvesvaraya Ideathon — Grand Finale</h3>
+                    <p>The flagship event of the year. Finalists present their ideas to a panel of judges from industry and academia. Live awards ceremony with prizes totalling ₹1,75,000.</p>
+                    <div class="event-meta">
+                        <span>📍 Bengaluru, Karnataka</span>
+                        <span>🕘 9:00 AM IST</span>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPS-7BOtIUCRgoWOYzWteWMq72Cd8Vi_mF7MBNATPeciVp3Q/formResponse" class="btn btn-primary" style="margin-top:1rem;" target="_blank" rel="noopener noreferrer">Register for Grand Finale</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Past Events -->
+<section class="content-section" style="background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Looking Back</span>
+            <h2 class="section-title">Past Events</h2>
+            <p class="section-subtitle">A record of the milestones we've celebrated together.</p>
+        </div>
+
+        <div class="past-events-list">
+            <div class="past-event-item">
+                <div class="past-event-date">May 15, 2025</div>
+                <div class="past-event-content">
+                    <h4>Ideathon 2025 — Launch Ceremony</h4>
+                    <p>The inaugural launch of the Visvesvaraya Ideathon, attended by educators, students, and industry leaders from across Karnataka.</p>
+                </div>
+                <span class="past-event-badge">Completed</span>
+            </div>
+            <div class="past-event-item">
+                <div class="past-event-date">Jul 10, 2025</div>
+                <div class="past-event-content">
+                    <h4>Mentorship Bootcamp — Bengaluru</h4>
+                    <p>A two-day intensive bootcamp where 40 registered teams received one-on-one mentorship from senior engineers and entrepreneurs.</p>
+                </div>
+                <span class="past-event-badge">Completed</span>
+            </div>
+            <div class="past-event-item">
+                <div class="past-event-date">Aug 1, 2025</div>
+                <div class="past-event-content">
+                    <h4>Submission Deadline — 2025 Cycle</h4>
+                    <p>Over 120 ideas submitted from 80+ institutions across India in the first cycle of the Ideathon.</p>
+                </div>
+                <span class="past-event-badge">Completed</span>
+            </div>
+            <div class="past-event-item">
+                <div class="past-event-date">Sep 15, 2025</div>
+                <div class="past-event-content">
+                    <h4>Grand Finale 2025 — Awards Ceremony</h4>
+                    <p>The first Grand Finale was held in Bengaluru. Winners were awarded prizes and incubation support in a ceremony honouring Sir MV's birth anniversary.</p>
+                </div>
+                <span class="past-event-badge">Completed</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="content-section">
+    <div class="container">
+        <div class="events-cta-card">
+            <h2>Ready to Participate?</h2>
+            <p>Don't miss your chance to be part of India's premier student innovation challenge. Submit your idea today.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScPS-7BOtIUCRgoWOYzWteWMq72Cd8Vi_mF7MBNATPeciVp3Q/formResponse" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit Your Idea →</a>
+        </div>
+    </div>
+</section>
+
+</div>
+{% endblock %}

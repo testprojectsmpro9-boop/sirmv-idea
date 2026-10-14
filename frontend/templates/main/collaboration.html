@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Partner With Us{% endblock %}
+
+{% block content %}
+<style>
+    .collaboration-page .page-hero .page-subtitle {
+        text-align: center;
+        text-justify: auto;
+    }
+</style>
+
+<div class="collaboration-page">
+
+    <div class="page-hero">
+        <div class="blueprint-bg"></div>
+        <div class="container">
+            <h1 class="page-title">Partner With Us</h1>
+            <p class="page-subtitle">
+                Help us discover and nurture the next generation of innovators.
+                Join the Visvesvaraya Ideathon as a partner, mentor, or sponsor.
+            </p>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <div class="container">
+
+            <h2>Collaboration Opportunities</h2>
+            <p class="section-subtitle">
+                We offer multiple ways for organizations and individuals to get involved
+                and support student innovation.
+            </p>
+
+            <div class="opportunities-grid">
+
+                <div class="opportunity-card">
+                    <h3>Partner with us</h3>
+                    <p class="opportunity-subtitle">
+                        For universities, incubators, and industry bodies.
+                    </p>
+                    <p>
+                        Collaborate on organizing local chapters, providing lab space
+                        for prototyping, or integrating the Ideathon into your
+                        institutional curriculum.
+                    </p>
+
+                    <ul class="opportunity-features">
+                        <li>Co-branding opportunities</li>
+                        <li>Access to talent pool</li>
+                        <li>Joint events & workshops</li>
+                    </ul>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Mentor opportunities</h3>
+                    <p class="opportunity-subtitle">
+                        For industry experts, researchers, and engineers.
+                    </p>
+
+                    <p>
+                        Guide student teams, help them refine their prototypes,
+                        and provide industry insights to make their solutions
+                        market-ready.
+                    </p>
+
+                    <ul class="opportunity-features">
+                        <li>Guide 1-3 promising teams</li>
+                        <li>Participate in jury panels</li>
+                        <li>Give back to the community</li>
+                    </ul>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Sponsorship benefits</h3>
+                    <p class="opportunity-subtitle">
+                        For corporations and philanthropists.
+                    </p>
+
+                    <p>
+                        Provide financial support for prizes, prototyping grants,
+                        and event logistics to scale the impact of the Ideathon
+                        nationwide.
+                    </p>
+
+                    <ul class="opportunity-features">
+                        <li>Title sponsorship options</li>
+                        <li>CSR initiative alignment</li>
+                        <li>National PR & visibility</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="collaboration-partners-header">
+                <h2>Our Collaboration Partners</h2>
+            </div>
+
+            <!-- Partner Logos -->
+            <div class="collaboration-logo-row">
+
+                <!-- NMF -->
+                <a href="https://nammamysorefoundation.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="collaboration-logo-link collaboration-logo-link--nmf">
+
+                    <img src="{% static 'images/nmf-logo.png' %}"
+                         alt="Namma Mysore Foundation Logo"
+                         class="collaboration-logo-img collaboration-logo-img--nmf">
+
+                    <span class="collaboration-logo-title">
+                        NMF – Organizer
+                    </span>
+                </a>
+
+                <!-- IFIA -->
+                <a href="https://www.ifiabharat.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="collaboration-logo-link">
+
+                    <img src="{% static 'images/ifia-bharat-logo.png' %}"
+                         alt="IFIA Bharat Logo"
+                         class="collaboration-logo-img">
+
+                    <span class="collaboration-logo-title">
+                        IFIA Bharat – Innovation Partner
+                    </span>
+                </a>
+
+                <!-- STEM -->
+                <a href="https://stemavishkar.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="collaboration-logo-link collaboration-logo-link--stem">
+
+                    <img src="{% static 'images/stem-avishkar-logo.png' %}"
+                         alt="STEM Avishkar Logo"
+                         class="collaboration-logo-img collaboration-logo-img--stem">
+
+                    <span class="collaboration-logo-title">
+                        STEM Avishkar Pvt Ltd – Technical Partner
+                    </span>
+                </a>
+
+                <!-- PRATYAGRA -->
+                <a href="https://pratyagrafoundation.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="collaboration-logo-link collaboration-logo-link--pratyagra">
+
+                    <img src="{% static 'images/pratyagra.png' %}"
+                         alt="Pratyagra Foundation Logo"
+                         class="collaboration-logo-img collaboration-logo-img--pratyagra">
+
+                    <span class="collaboration-logo-title">
+                        Pratyagra Foundation – Incubation Partner
+                    </span>
+                </a>
+
+                <!-- AAF -->
+                <a href="https://www.akshayaaahara.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="collaboration-logo-link collaboration-logo-link--aaf">
+
+                    <img src="{% static 'images/aaf-logo.jpg' %}"
+                         alt="Akshaya Aahara Foundation Logo"
+                         class="collaboration-logo-img collaboration-logo-img--aaf">
+
+                    <span class="collaboration-logo-title">
+                        Akshaya Aahara Foundation – Community Partner
+                    </span>
+                </a>
+                <!-- ROTARY -->
+                <a href="https://www.rotary.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="collaboration-logo-link collaboration-logo-link--rotary">
+                    <img src="{% static 'images/rotary-international-logo.png' %}?v=2"
+                         alt="Rotary International Logo"
+                         class="collaboration-logo-img collaboration-logo-img--rotary">
+                    <span class="collaboration-logo-title">
+                        Rotary – Collaboration Partner
+                    </span>
+                </a>
+            </div>
+
+            <div class="collaboration-form-section">
+                <h2>Start the Conversation</h2>
+
+                <p class="section-subtitle">
+                    Fill out the form below and our partnerships team
+                    will get back to you within 24 hours.
+                </p>
+
+                <form action="https://forms.gle/GoPK6XfER3iJEqxSA"
+                      method="get"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="collaboration-form">
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Inquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+# Python
+venv/
+env/
+ENV/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Django
+*.sqlite3
+db.sqlite3
+staticfiles/
+media/submissions/
+backend/.env
+backend/.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local development
+.agents/
+node_modules/
+.next/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment backups
+.git.backup/

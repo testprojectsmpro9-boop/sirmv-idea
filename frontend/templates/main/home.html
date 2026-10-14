@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}SIR MV Young Innovators Challenge{% endblock %}
+
+{% block content %}
+<style>
+    @media (max-width: 768px) {
+        .home-page .about-challenge-text p,
+        .home-page .legacy-text p {
+            text-align: left;
+            text-justify: auto;
+            word-spacing: normal;
+        }
+    }
+</style>
+
+<!-- Intro Video Overlay -->
+<!-- <div id="introVideoOverlay" class="intro-video-overlay">
+    <video id="introVideo" class="intro-video" autoplay muted playsinline preload="auto" controls>
+        <source src="{% static 'media/video/intro-video.mp4' %}?v=20260520" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- This layer catches click/touch on the video area but leaves bottom controls free -->
+    <!-- <div id="introVideoSkipLayer" class="intro-video-skip-layer" aria-label="Skip intro video"></div>
+</div> -->
+
+<div class="announcement-section" aria-label="Announcement section">
+    <div class="container announcement-inner">
+        <h2 class="announcement-heading">Announcement</h2>
+        <div class="announcement-ticker" aria-label="Latest announcements">
+            <div class="ticker-track-wrapper">
+                <div class="ticker-track">
+                    <span class="ticker-item">Thank you all for your participation! Shortlisted ideas are now available. <a href="{% static 'media/guidelines/shortlisted-ideas.pdf' %}" download style="color: #4A90E2; font-weight: bold; text-decoration: underline;">View Here</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home-page">
+    <div class="hero-section">
+        <div class="blueprint-bg"></div>
+
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-left">
+                    <h1 class="hero-title">SIR MV Young Innovators Challenge</h1>
+                    <h2 class="hero-subtitle">A tribute to M. Visvesvaraya</h2>
+
+                    <blockquote class="hero-quote">
+                        <p>"It is better to wear out than to rust out."</p>
+                        <cite>— Sir M. Visvesvaraya</cite>
+                    </blockquote>
+
+                    <p class="hero-description">
+                        Bharat Ratna Sir M. Visvesvaraya.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <div class="btn btn-primary"
+                           onclick="return false;"
+                           style="opacity: 0.5; cursor: not-allowed; pointer-events: none;">
+                            Submit Your Ideas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <section class="stats-section" id="dashboard" aria-labelledby="dashboard-title">
+        <div class="container">
+            <div class="section-header">
+
+                <h2 class="section-title" id="dashboard-title">Our Impact So Far</h2>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <h3>275</h3>
+                    <p>School Visits</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>80</h3>
+                    <p>Ideathons Conducted</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>12,700</h3>
+                    <p>Students Reached</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>2,906</h3>
+                    <p>Ideas Received</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>93</h3>
+                    <p>Via Website</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>23</h3>
+                    <p>Via WhatsApp Reports</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="content-section" style="background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About the Challenge</span>
+                <h2 class="section-title">What Is This Challenge?</h2>
+            </div>
+
+            <div class="about-challenge-text" style="max-width: 860px; margin: 0 auto;">
+                <p style="font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 1rem;">
+                    The Bharat Ratna Sir M. Visvesvaraya Innovator Challenge is a student innovation platform created to encourage young minds to identify real-world problems and present creative, practical, and impactful solutions.
+                </p>
+
+                <p style="font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 1rem;">
+                    Inspired by the vision, discipline, and engineering excellence of Sir M. Visvesvaraya, this challenge gives students an opportunity to showcase their ideas, improve their problem-solving skills, and receive recognition for their innovative thinking.
+                </p>
+
+                <p style="font-size: 1rem; color: var(--muted); line-height: 1.85;">
+                    Students from different schools can submit their best ideas, projects, models, or concepts. The most promising ideas will be reviewed by experts and awarded based on creativity, feasibility, impact, and presentation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tracks-section">
+        <div class="container">
+            <h2 class="section-title">Three categories. Infinite possibilities.</h2>
+            <p class="section-subtitle">Whether you are just starting out or in advanced studies, there is a place for your ideas.</p>
+
+            <div class="tracks-grid">
+                <div class="track-card">
+                    <h3>School</h3>
+                    <p>For schools encouraging students to submit creative and practical solutions for real-life problems.</p>
+                </div>
+
+                <div class="track-card">
+                    <h3>Individual</h3>
+                    <p>For students who want to submit their own original idea or innovation independently.<br><span class="text-gold-highlight">Including school dropouts aged 6-18 years</span></p>
+                </div>
+
+                <div class="track-card">
+                    <h3>Group</h3>
+                    <p>For teams of up to 2 students working together on one original idea or innovation.</p>
+                </div>
+
+                <!-- <div class="tracks-submit-action">
+                    <a href="https://docs.google.com/forms/d/1WF6ULD-hv09cVMSY3lHyD3S5oSUiFmn6QMeO6NbvjUk/viewform"
+                       class="view-all-link tracks-submit-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Choose Your category
+                    </a> -->
+
+                    <a href="{% static 'media/guidelines/offline-idea-form.pdf' %}"
+                       class="view-all-link tracks-submit-link tracks-download-link"
+                       download="offline-idea-form.pdf"
+                       data-download-toast="Form successfully downloaded">
+                        Download Idea Submission Form (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="participate-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Participation Flow</span>
+                <h2 class="section-title">How to Participate</h2>
+                <p class="section-subtitle">Follow the simple step-by-step process to submit your innovation idea.</p>
+            </div>
+
+            <div class="participate-flow" aria-label="How to participate">
+                <div class="participate-center">
+                    <span>How to</span>
+                    <strong>Participate</strong>
+                </div>
+
+                <span class="participate-line participate-line--1" aria-hidden="true"></span>
+                <span class="participate-line participate-line--2" aria-hidden="true"></span>
+                <span class="participate-line participate-line--3" aria-hidden="true"></span>
+                <span class="participate-line participate-line--4" aria-hidden="true"></span>
+                <span class="participate-line participate-line--5" aria-hidden="true"></span>
+
+                <div class="participate-step participate-step--1">
+                    <span class="participate-number">01</span>
+                    <p>Think of an idea</p>
+                </div>
+                <div class="participate-step participate-step--2">
+                    <span class="participate-number">02</span>
+                    <p>Fill the application form</p>
+                </div>
+                <div class="participate-step participate-step--3">
+                    <span class="participate-number">03</span>
+                    <p>Submit through Website / WhatsApp / Email / Post</p>
+                </div>
+                <div class="participate-step participate-step--4">
+                    <span class="participate-number">04</span>
+                    <p>Expert review process</p>
+                </div>
+                <div class="participate-step participate-step--5">
+                    <span class="participate-number">05</span>
+                    <p>Selected ideas announced</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="school-competition-section">
+        <div class="container">
+            <div class="school-competition-layout">
+                <div class="school-competition-heading">
+                    <span class="section-label">For Schools</span>
+                    <h2>Schools Can Conduct Internal Innovation Competitions</h2>
+                </div>
+
+                <div class="school-competition-copy">
+                    <span class="school-competition-badge">Top 2 Innovations</span>
+                    <p>Schools may organize idea competitions within their campus and submit their top 2 selected innovations to the SIR MV Young Innovators Challenge. Each innovation should be submitted separately through the submission form, and a unique Idea ID will be generated for every submission. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="legacy-section">
+        <div class="container">
+            <div class="legacy-content">
+                <div class="legacy-image">
+                    <img src="{% static 'images/engineering-heritage.png' %}"
+                         alt="Sir M. Visvesvaraya — Engineering Heritage"
+                         class="legacy-img">
+                </div>
+
+                <div class="legacy-text">
+                    <p>Tribute to Bharat Ratna Sir M. Visvesvaraya's call to action is as relevant today as it was a century ago. It is your turn to build, to invent, and to industrialise for a new era.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Discover His Legacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

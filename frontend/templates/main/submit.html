@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Submit Your Idea{% endblock %}
+
+{% block content %}
+<style>
+    .submit-page p,
+    .submit-page li {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+<div class="submit-page">
+<div class="page-hero small">
+    <div class="container">
+        <h1 class="page-title">Submit Your Idea</h1>
+        <p class="page-subtitle">Share your vision to solve real-world problems.</p>
+    </div>
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <div class="form-layout">
+            <div class="form-container">
+                <h2>Idea Proposal Form</h2>
+                <p class="form-description">Please fill out all required fields carefully. Make sure your description clearly explains the problem and your solution.</p>
+
+                <form method="post" enctype="multipart/form-data" class="submission-form">
+                    {% csrf_token %}
+                    
+                    <div class="form-group">
+                        <label for="full_name">Full Name / Team Lead</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution_name">Institution Name</label>
+                        <input type="text" id="institution_name" name="institution_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category" required>
+                            <option value="school" {% if category == 'school' %}selected{% endif %}>School (8th - 12th Std)</option>
+                            <option value="college" {% if category == 'college' %}selected{% endif %}>College (UG / PG)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project_title">Project Title</label>
+                        <input type="text" id="project_title" name="project_title" maxlength="160" required>
+                        <small>Max 160 characters.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Detailed Description</label>
+                        <textarea id="description" name="description" rows="10" maxlength="4000" required></textarea>
+                        <small>Include technical details if applicable. Max 4000 characters.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="supporting_document">Supporting Document (Optional)</label>
+                        <input type="file" id="supporting_document" name="supporting_document" accept=".pdf,.ppt,.pptx">
+                        <small>Attach a PDF or presentation (Max 10MB).</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Proposal</button>
+                </form>
+            </div>
+
+            <div class="form-sidebar">
+                <div class="help-card">
+                    <h3>Need Help?</h3>
+                    <p>Make sure your proposal covers:</p>
+                    <ul>
+                        <li>The specific problem you are solving</li>
+                        <li>How your solution works</li>
+                        <li>Who benefits from this</li>
+                        <li>Why it is technically feasible</li>
+                    </ul>
+                </div>
+
+                <div class="deadline-card">
+                    <h4>Deadline</h4>
+                    <p>All submissions must be received by <strong>November 15th, 11:59 PM IST</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock %}

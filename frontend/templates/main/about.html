@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Sir M. Visvesvaraya{% endblock %}
+
+{% block content %}
+<style>
+    .about-page .page-hero .page-subtitle {
+        text-align: center;
+        text-justify: auto;
+    }
+
+    .about-page .monument-card p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+<div class="about-page">
+<div class="page-hero">
+    <div class="blueprint-bg"></div>
+    <div class="container">
+        <p class="page-label">The Architect of Modern Mysore</p>
+        <h1 class="page-title">Sir Mokshagundam Visvesvaraya</h1>
+        <p class="page-subtitle">Engineer, statesman, and visionary. A man who believed that the systematic application
+            of science and engineering was the only path to national prosperity.</p>
+    </div>
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <div class="sir-mv-portrait-row">
+    <div class="portrait-section portrait-section-vertical">
+        <img src="{% static 'images/sir-m-visvesvaraya.png' %}" alt="Portrait of Sir M. Visvesvaraya"
+            class="portrait-img">
+
+        <div class="portrait-info portrait-info-below">
+            <h3>1861 – 1962</h3>
+            <p>A CENTURY OF IMPACT</p>
+        </div>
+    </div>
+
+    <p class="sir-mv-quote-text">
+        “Remember, your work may be only to sweep a railway crossing, but it is your duty
+        to keep it so clean that no other crossing in the world is as clean as yours.”
+    </p>
+</div>
+
+        <div class="timeline-header">
+            <span class="section-label">Early Life & Education</span>
+            <h2>From Muddenahalli to Pune</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">1861</div>
+                <div class="timeline-content">
+                    <h3>Born in Muddenahalli</h3>
+                    <p>Born on September 15 to a Telugu Brahmin family in a village near Chikkaballapur, Kingdom of
+                        Mysore.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1881</div>
+                <div class="timeline-content">
+                    <h3>Education</h3>
+                    <p>Earned his Bachelor of Arts from Central College, Bangalore, followed by studying civil
+                        engineering at the College of Science, Pune (now COEP).</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="timeline-header">
+        <span class="section-label">Life & Legacy</span>
+        <h2>A Journey of Innovation</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-year">1861</div>
+            <div class="timeline-content">
+                <h3>Born in Muddenahalli</h3>
+                <p>Born on September 15 to a Telugu Brahmin family in a village near Chikkaballapur, Kingdom of
+                    Mysore.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1881</div>
+            <div class="timeline-content">
+                <h3>Education</h3>
+                <p>Earned his Bachelor of Arts from Central College, Bangalore, followed by studying civil
+                    engineering at the College of Science, Pune (now COEP).</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1895</div>
+            <div class="timeline-content">
+                <h3>Sukkur Waterworks</h3>
+                <p>Designed and implemented an intricate system of waterworks for the municipality of Sukkur in
+                    Sindh (now in Pakistan).</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1903</div>
+            <div class="timeline-content">
+                <h3>Automatic Weir Gates</h3>
+                <p>Designed and patented automatic weir floodgates, first installed at the Khadakwasla Reservoir
+                    near Pune to raise the flood supply level.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1912 - 1918</div>
+            <div class="timeline-content">
+                <h3>Diwan of Mysore</h3>
+                <p>Served as the Diwan (Chief Minister) of Mysore. Founded the State Bank of Mysore, University of
+                    Mysore (1916), and the Mysore Chamber of Commerce.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1924</div>
+            <div class="timeline-content">
+                <h3>Krishna Raja Sagara (KRS) Dam</h3>
+                <p>Served as the chief engineer for the construction of the KRS Dam in Mandya, which was the largest
+                    reservoir in Asia at the time it was built.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1955</div>
+            <div class="timeline-content">
+                <h3>Bharat Ratna</h3>
+                <p>Awarded India's highest civilian honor, the Bharat Ratna, for his exceptional contributions to
+                    the nation's engineering and industrial development.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1962</div>
+            <div class="timeline-content">
+                <h3>Passing</h3>
+                <p>Passed away on April 14 at the age of 101, leaving behind a legacy that continues to inspire
+                    millions of engineers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="monuments-section">
+        <h2>Monuments of Engineering</h2>
+        <p class="section-subtitle">Beyond his statesmanship, Sir MV was fundamentally a builder. His engineering
+            solutions transformed the landscape of India.</p>
+
+        <div class="monuments-grid">
+            <div class="monument-card">
+                <h3>Khadakwasla Weir Gates</h3>
+                <p>Patented a system of automatic weir water floodgates that were installed at the Khadakwasla
+                    Reservoir. They allowed the reservoir to hold more water without damaging the dam.</p>
+            </div>
+
+            <div class="monument-card">
+                <h3>Bhadravati Steel Works</h3>
+                <p>Rescued the Mysore Iron and Steel Works from shutting down by taking over as Chairman, turning it
+                    into a profitable enterprise and a cornerstone of industrial Mysore.</p>
+            </div>
+
+            <div class="monument-card full-width">
+                <img src="{% static 'images/krs-dam.png' %}" alt="Krishna Raja Sagara Dam" class="monument-img">
+                <h3>Krishna Raja Sagara Dam</h3>
+                <p>Orchestrated the construction of the KRS Dam across the Kaveri River. It provided drinking water
+                    for Mysore and Bangalore and supported the Shivanasamudra hydroelectric power station.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+</div>
+{% endblock %}

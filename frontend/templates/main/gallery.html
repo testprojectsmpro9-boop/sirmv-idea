@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Gallery — Sir M. Visvesvaraya Tribute{% endblock %}
+
+{% block content %}
+<style>
+    .gallery-page .page-hero .page-subtitle {
+        text-align: center;
+        text-justify: auto;
+    }
+</style>
+<div class="gallery-page">
+
+<!-- Hero -->
+<div class="page-hero">
+    <div class="blueprint-bg"></div>
+    <div class="container">
+        <p class="page-label">Visual Archive</p>
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-subtitle">A curated visual tribute to Sir M. Visvesvaraya — his portrait, his greatest engineering achievement, and the legacy he left behind.</p>
+    </div>
+</div>
+
+<!-- Gallery Grid -->
+<section class="content-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">The Collection</span>
+            <h2 class="section-title">Heritage Showcase</h2>
+            <p class="section-subtitle">Images that capture the man, the engineer, and the monuments he built for India.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- Featured large item -->
+            <div class="gallery-item gallery-item--featured">
+                <div class="gallery-img-wrap">
+                    <img src="{% static 'images/engineering-heritage.png' %}"
+                         alt="Sir M. Visvesvaraya — Engineering Heritage"
+                         class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h3>Engineering Heritage</h3>
+                            <p>Sir M. Visvesvaraya surrounded by the blueprints, instruments, and monuments that defined his century of work.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-caption">
+                    <span class="gallery-tag">Tribute Composite</span>
+                    <h4>Engineering Heritage</h4>
+                    <p>A cinematic tribute to Sir MV's life and legacy — the dam, the bridge, the blueprints, and the man himself.</p>
+                </div>
+            </div>
+
+            <!-- Portrait -->
+            <div class="gallery-item">
+                <div class="gallery-img-wrap">
+                    <img src="{% static 'images/sir-m-visvesvaraya.png' %}"
+                         alt="Portrait of Sir M. Visvesvaraya"
+                         class="gallery-img gallery-img--portrait">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h3>Official Portrait</h3>
+                            <p>Sir Mokshagundam Visvesvaraya, 1861–1962.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-caption">
+                    <span class="gallery-tag">Portrait</span>
+                    <h4>Sir M. Visvesvaraya</h4>
+                    <p>The official portrait of Sir MV — engineer, statesman, and Bharat Ratna awardee.</p>
+                </div>
+            </div>
+
+            <!-- KRS Dam -->
+            <div class="gallery-item">
+                <div class="gallery-img-wrap">
+                    <img src="{% static 'images/krs-dam.png' %}"
+                         alt="Krishna Raja Sagara Dam at sunset"
+                         class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <h3>KRS Dam</h3>
+                            <p>The Krishna Raja Sagara Dam — Sir MV's greatest engineering monument.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-caption">
+                    <span class="gallery-tag">Engineering Monument</span>
+                    <h4>Krishna Raja Sagara Dam</h4>
+                    <p>Built across the Kaveri River in Mandya, the KRS Dam was the largest reservoir in Asia when completed in 1924.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Quote Banner -->
+<section class="gallery-quote-section">
+    <div class="container">
+        <blockquote class="gallery-quote">
+            <p>"Every great invention starts with a simple idea" </p>
+            <cite>— Sir M. Visvesvaraya</cite>
+        </blockquote>
+    </div>
+</section>
+
+<!-- About the Images -->
+<section class="content-section" style="background: var(--off-white); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Context</span>
+            <h2 class="section-title">About These Images</h2>
+        </div>
+        <div class="gallery-info-grid">
+            <div class="gallery-info-card">
+                <img src="{% static 'images/sir-m-visvesvaraya.png' %}" alt="Sir MV Portrait" class="gallery-info-thumb">
+                <div>
+                    <h4>The Portrait</h4>
+                    <p>A colourised portrait of Sir Mokshagundam Visvesvaraya, showing the statesman in his characteristic white turban with gold trim — a symbol of his dignity and service to the nation.</p>
+                </div>
+            </div>
+            <div class="gallery-info-card">
+                <img src="{% static 'images/krs-dam.png' %}" alt="KRS Dam" class="gallery-info-thumb">
+                <div>
+                    <h4>The KRS Dam</h4>
+                    <p>The Krishna Raja Sagara Dam at sunset — a breathtaking view of Sir MV's most celebrated engineering achievement. It continues to supply water to Mysuru and Bengaluru to this day.</p>
+                </div>
+            </div>
+            <div class="gallery-info-card">
+                <img src="{% static 'images/engineering-heritage.png' %}" alt="Engineering Heritage" class="gallery-info-thumb">
+                <div>
+                    <h4>Engineering Heritage</h4>
+                    <p>A composite tribute image placing Sir MV in the context of his greatest works — the dam, the railway bridge, the blueprints, and the surveying instruments that were his tools of nation-building.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+{% endblock %}
